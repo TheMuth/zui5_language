@@ -1,0 +1,46 @@
+<mvc:View xmlns:f="sap.ui.layout.form" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:sap.ui.core="sap.ui.core" xmlns:appData="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	controllerName="com.nl4b.zlanguage.controller.Main">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Panel expandable="true" expanded="true" headerText="{i18n>enterdata}" id="panel1">
+						<Text id="txDatum" text="{ path: 'myData>/datum', type:'sap.ui.model.type.Date', formatOptions: {style:'full'} }"/>
+						<f:SimpleForm class="editableForm" columnsL="1" columnsM="1" editable="true" emptySpanL="4" emptySpanM="4" labelSpanL="3" labelSpanM="3"
+							layout="ResponsiveGridLayout" maxContainerCols="2" minWidth="1024">
+							<f:content>
+								<Label text="{i18n>firstname}"/>
+								<Input id="ipFirstName" value="{myData>/firstName}"/>
+								<Label text="{i18n>lastname}"/>
+								<Input id="ipLastName" value="{myData>/lastName}"/>
+								<Label text=""/>
+								<Button id="btnSubmit" press="onClick" text="{i18n>submit}"/>
+							</f:content>
+						</f:SimpleForm>
+					</Panel>
+					<Button id="btnNL" appData:language="NL" press="onChangeLanguage" text="Dutch"/>
+					<Button id="btnEN" appData:language="EN" press="onChangeLanguage" text="English"/>
+					<Button id="btnDE" appData:language="DE" press="onChangeLanguage" text="German"/>
+					<Button id="btnFR" appData:language="FR" press="onChangeLanguage" text="French"/>
+					<Button id="btnES" appData:language="ES" press="onChangeLanguage" text="Spanish"/>
+					<Button id="btnSV" appData:language="SV" press="onChangeLanguage" text="Swedish"/>
+					<Button id="btnNO" appData:language="NO" press="onChangeLanguage" text="Norwein"/>
+					<Button id="btnDK" appData:language="DK" press="onChangeLanguage" text="Danisch"/>
+                    <Button id="btnZA" appData:language="ZA" press="onChangeLanguage" text="African"/>
+					<Button id="btnGR" appData:language="GR" press="onChangeLanguage" text="Greek"/>
+					<Button id="btnCZ" appData:language="CZ" press="onChangeLanguage" text="Czech"/>
+					<Button id="btnAR" appData:language="AR" press="onChangeLanguage" text="Arabic"/>
+					<Button id="btnIW" appData:language="IW" press="onChangeLanguage" text="Hebrew"/>
+					<Button id="btnRU" appData:language="RU" press="onChangeLanguage" text="Russian"/>
+					<Button id="btnMK" appData:language="MK" press="onChangeLanguage" text="Macedonian"/>
+					<Button id="btnHI" appData:language="HI" press="onChangeLanguage" text="Hindi"/>
+					<Button id="btnTA" appData:language="TA" press="onChangeLanguage" text="Tamil"/>
+					<Button id="btnTL" appData:language="TL" press="onChangeLanguage" text="Telugu"/>
+					<Button id="btnJA" appData:language="JA" press="onChangeLanguage" text="Japanese"/>
+					<Button id="btnZH" appData:language="ZH" press="onChangeLanguage" text="Chinese"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
