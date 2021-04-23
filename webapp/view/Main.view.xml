@@ -25,7 +25,7 @@
 					<Button id="btnFR" appData:language="FR" press="onChangeLanguage" text="French"/>
 					<Button id="btnES" appData:language="ES" press="onChangeLanguage" text="Spanish"/>
 					<Button id="btnSV" appData:language="SV" press="onChangeLanguage" text="Swedish"/>
-					<Button id="btnNO" appData:language="NO" press="onChangeLanguage" text="Norwein"/>
+					<Button id="btnNO" appData:language="NO" press="onChangeLanguage" text="Norwegian"/>
 					<Button id="btnDK" appData:language="DK" press="onChangeLanguage" text="Danisch"/>
                     <Button id="btnZA" appData:language="ZA" press="onChangeLanguage" text="African"/>
 					<Button id="btnGR" appData:language="GR" press="onChangeLanguage" text="Greek"/>
